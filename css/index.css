@@ -1,0 +1,394 @@
+/***** Padding below the footer and lighter body text *****/
+
+html,
+body {
+    height: 100%;
+    font-weight: 300;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+
+
+/*****  Header and filter   *****/
+
+header {
+    display: flex;
+    align-items: flex-start;
+    align-content: center;
+    background-color: #5B2A86;
+    font-weight: 700;
+    border-bottom: 3px solid #3C145E;
+    width: 100%;
+}
+
+.search  {
+    width: 33%;
+    display: flex;
+    padding: 25px 50px;
+    align-items: flex-start;
+    align-content: center;
+    border-right: 1px solid #3B1959;
+}
+
+#refresh-btn{
+    height: 62px;
+    margin: 0;
+    display: block;
+    text-align: center;
+    border-radius: 5px;
+    border: none;
+    background-color: #200835;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: -0.5pt;
+    text-decoration: none;
+    cursor: pointer;
+    padding: 0 25px; 
+    line-height: 62px;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.filter {
+    display: flex;
+    align-items: flex-start;
+    align-content: center;
+    border-left: 1px solid #794AA4;
+    padding: 33px 50px;
+    width: 67%;
+}
+
+h2{
+    margin-top: 18px;
+    color: white;
+    display: flex;
+    align-items: flex-start;
+    align-content: center;
+    letter-spacing: -0.43pt;
+    margin-right: 30px;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+form#filterform{
+    display: flex;
+    flex-flow: row wrap;
+    align-items: stretch;
+    font-size: 15px;
+    line-height: 41px;
+    padding-top: 5px;
+    word-wrap: break-word;
+    font-family: 'Overpass', sans-serif;
+}
+
+p#rating, p#ratingTwo {
+    color: #fff;
+    margin-right: 25px;
+    line-height: 46px;
+}
+
+#RatingMin, #RatingMax{
+    width: 50px;
+    font-family: 'Overpass', sans-serif;
+    background-color: #CEA2F6;
+    border-radius: 5px;
+    text-align: center;
+    border: none;
+    color: #3C145E;
+    font-size: 15px;
+    line-height: 22px;
+}
+
+#filter-btn{
+    box-sizing: border-box;
+    padding: 5px 25px;
+    margin-left: 25px;
+    height: 42px;
+    text-align: center;
+    border-radius: 5px;
+    border: none;
+    background-color: #200835;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: -0.5pt;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#filter-btn:hover, #refresh-btn:hover {
+    background-color:#CEA2F6;
+    color: #3C145E;
+}
+
+
+
+/*****  Aside   *****/
+aside {
+    width: 33%;
+    background-color: #EEE;
+    padding: 36px 0;
+    height: 680px;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.list {
+    height: 250px;
+    padding: 12px;
+    margin: 0 24px 34px;
+    margin-bottom: 10px;
+    -webkit-box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.1);
+    align-content: center;
+    border-radius: 5px;
+    position: relative;
+    background-color: white;
+}
+
+h3 {
+    float: left;
+    font-weight: 900;
+    font-size: 21px;
+    line-height: 27px;
+    letter-spacing: -0.5pt;
+    padding-top: 12px;
+}
+
+
+/*****  Street-view & reviews   *****/
+
+.street-view {
+    position: absolute;
+    border-radius: 5px;
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
+
+.street-view-btn, .show-reviews-btn{
+    border: none;
+    float: left;
+    font-size: 15px;
+    left: calc(50% - 30px);
+    color: #CEA2F6;
+    background-color: #5B2A86;
+    width: 49%;
+    height: 38px;
+    z-index: 2;
+    border-radius: 5px;
+    text-align: center;
+    cursor: pointer;
+    margin-right: 2%;
+    margin-top: 30px;
+    justify-content: space-between;
+    -webkit-box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.1);
+}
+
+.show-reviews-btn {
+    margin-right: 0;
+}
+
+.street-view-btn:hover {
+    background-color: #CEA2F6;
+    color: #5B2A86;
+}
+
+.show-reviews-btn:hover {
+    background-color: #CEA2F6;
+    color:  #5B2A86;
+}
+
+.close-street-view-btn {
+    position: absolute;
+    font-family: 'Overpass', sans-serif;
+    font-size: 15px;
+    top: 90%;
+    left: calc(50% - 30px);
+    width: 60px;
+    color: #CEA2F6;
+    background-color: #5B2A86;
+    height: 40px;
+    z-index: 2;
+    cursor: pointer;
+    display: none;
+    border: none;
+    border-radius: 5px;
+    -webkit-box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.1);
+}
+
+ .close-street-view-btn:hover {
+    background-color: #CEA2F6;
+    color:  #5B2A86;
+}
+
+
+/****** Review content & InfoWindow *****/
+
+.reviews-content {
+    position: absolute;
+    color: black;
+    padding-left: 40px;
+    padding-right: 40px;
+    text-align: justify-all;
+    top:0;
+    left:0;
+    width: 0;
+    height: 0;
+    overflow-y: auto;
+    background-color: white;
+    display: none;
+    z-index: 1;
+}
+
+.reviews-content p{
+    line-height: 1.2;
+}
+
+h4{
+    font-weight: 900;
+    font-size: 21px;
+    line-height: 27px;
+    letter-spacing: -0.5pt;
+    padding-top: 12px;
+}
+
+.info {
+    display: block;
+    width: 100%;
+    position: relative;
+}
+
+.info p {
+    position: relative;
+    float: left;
+    width: 100%;
+    height: auto;
+    font-size: 15px;
+    line-height: 21px;
+    padding: 5px;
+    font-weight: 300;
+}
+
+.info-window-container{
+    font-size: 15px;
+    border-radius: 5px;
+    font-family: sans-serif;
+    overflow-y: auto;
+    max-height: auto;
+    box-shadow: 0px 2px 10px 1px rgba(0,0,0,0.5);
+}
+
+
+
+/****** Review form & InfoWindow form *****/
+
+.info-window-form{
+    font-size: 15px;
+    border-radius: 5px;
+    font-family: 'Overpass', sans-serif;
+    overflow-y: auto;
+    max-height: auto;
+    box-shadow: 0px 2px 10px 1px rgba(0,0,0,0.5);
+}
+
+.add-review-form {
+    box-shadow: 0 2px 2px rgba(33, 33, 33, 0.4);
+    width: 100%;
+    height: 400px;
+    border-radius: 5px;
+    text-align: center;
+    margin-bottom: 40px;
+    border: none;
+    background-color: #eee;
+}
+
+.add-review-form input, .add-review-form textarea, .info-window-form input, .info-window-form textarea {
+    width: 90%;
+    margin: 5%;
+    border-radius: 5px;
+    font-size: 15px;
+    line-height: 21px;
+    font-size: 15px;
+    line-height: 21px;
+    word-wrap: break-word;
+    padding-left: 10px;
+    font-family: 'Overpass', sans-serif;
+}
+
+.add-review-form input, .info-window-form input{
+    height: 40px;
+    border-radius: 5px;
+}
+
+.add-review-form textarea, .info-window-form textarea {
+    height: 150px;
+    border-radius: 5px;
+}
+
+.add-review-form input[type="submit"], .info-window-form input[type="submit"]{
+    font-size: 15px;
+    border: none;
+    left: calc(50% - 30px);
+    color: #CEA2F6;
+    background-color: #5B2A86;
+    text-align: center;
+    cursor: pointer;
+    -webkit-box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.1);
+}
+
+.add-review-form input[type="submit"]:hover, .info-window-form input[type="submit"]:hover {
+    background-color: #CEA2F6;
+    color: #5B2A86;
+}
+
+
+
+/****** Map *****/
+
+#map {
+    height: 680px;
+    width: calc(100% - 33%);
+    position: absolute;
+    right: 0px;
+    top: 120px;
+}
+
+.map-control {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 2px rgba(33, 33, 33, 0.4);
+    font-family: 'Roboto', 'sans-serif';
+    margin: 10px;
+    padding-right: 5px;
+    display: none;
+}
+
+#map .map-control {
+    display: block;
+}
+
+
+
+/****** Style Star Rating  *****/
+
+#starbox, .starbox {
+    height: 42px;
+    width: 128px;   
+    border: 2px solid transparent;
+    margin-right: 25px;
+    display: flex;
+    border-radius: 10px;
+    padding-top: 10px;
+}

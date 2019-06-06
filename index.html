@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/index.css" />
+    <link href="https://fonts.googleapis.com/css?family=Overpass:300,400,600,700,900" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
+
+    <title>Projet 7 - Site d'avis de restaurant </title>
+</head>
+
+<body>
+    
+    <header>
+        <div class="search">
+            
+            <button id="refresh-btn" type="text" >Actualiser restaurants à proximité</button>
+            
+        </div>
+        
+        <div class="filter">
+            <h2>Choisir les restaurants par note:</h2>
+                <form id="filterform" >
+                    <p id="rating">
+                        <label for='RatingMin'>Minimale:</label>
+                        <input type="number" id="RatingMin"  />
+                    </p>
+                    <p id="ratingTwo">
+                        <label for='RatingMax'>Maximale:</label>
+                        <input type="number" id="RatingMax"  />
+                    </p>
+                    <input type="submit" id="filter-btn" value="Valider"/>
+                </form>
+        </div>
+   
+    </header>
+    
+    <aside id='restau-list-aside'>
+        <div id="list"></div>
+    </aside>
+    
+    <div id="style-selector-control" class="map-control">
+        <input type="radio" name="show-hide" id="hide-poi" class="selector-control">
+        <label for="hide-poi">Hide</label>
+        <input type="radio" name="show-hide" id="show-poi" class="selector-control" checked="checked">
+        <label for="show-poi">Show</label>
+    </div>
+    
+    <div id="map">
+        <div id="EmplacementPanoramiqueStreetView"></div>
+    </div>
+
+    
+
+
+
+
+    <!--+++++++++++++++++ SCRIPTS ++++++++++++++++++-->
+    
+    <script src="js/global.js"></script>
+    <script src="js/HTMLElementContructors.js"></script> 
+    <script src="js/request.js"></script> 
+    
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDkzXFknNvGZyDu4LD5QVUCL6xK3CTdSQY&libraries=places&callback=initMapWithPosition" async defer></script>
+  
+    <script src="js/index.js"></script> 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+</body>
+
+</html>

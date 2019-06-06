@@ -1,0 +1,90 @@
+[
+   {
+      "restaurantName":"Restaurant La Scierie",
+      "address":"331 Route du Col des Aravis, 74220 La Clusaz",
+      "lat":45.9153572,
+      "long":6.3984556,
+      "ratings":[
+         {
+            "stars":4,
+            "comment":"On a très  bien mangé  ambiance sympa serveuse très conviviale ."
+         },
+         {
+            "stars":5,
+            "comment":"La fondue y est excellente. Le tartare délicieux ainsi que les frites servies avec. Les vins aux verres très bons et à prix raisonnables. Le staff est très pro et sympa. L’architecture est superbe et l’atmosphère très chaleureuse. Sans doute la meilleure adresse sur la Clusaz avec l’arbé."
+         }
+      ]
+   },
+   {
+      "restaurantName":"L'Ourson",
+      "address":"27 Passage du Mont Blanc, 74220 La Clusaz",
+      "lat":45.9043197,
+      "long":6.422216,
+      "ratings":[
+         {
+            "stars":4,
+            "comment":"Charmant petit restaurant avec  une bonne équipe très  sympathique accueillent et très  chaleureux. Une cuisine excellent. A decouvrir ."
+         },
+         {
+            "stars":5,
+            "comment":"Je me suis régalée ! De l’entrée au dessert un sans faute. Des cuissons parfaites ( omble chevalier fabuleux) des goûts justes et raffinés.  Voilà bien longtemps que je n’avais pris autant de plaisir à table! Messieurs les guides: une étoile s’il vous plaît!"
+         }
+      ]
+   },
+     {
+      "restaurantName":"La Ferme",
+      "address":"1078 Route du Col des Aravis, 74220 La Clusaz",
+      "lat":45.9026901,
+      "long":6.4232107,
+      "ratings":[
+         {
+            "stars":5,
+            "comment":"Parfait comme à chaque fois. Tout est bon, les prix raisonnables et l'accueil parfait. Une équipe souriante, dynamique et toujours de bons conseils. A faire à toutes les saisons"
+         },
+         {
+            "stars":4,
+            "comment":"Très belle décoration montagnarde et chaleureuse. Serveurs et serveuses très agréables avec un service rapide. De plus, les prix sont raisonnables. Je recommande vivement ce restaurant !"
+         }
+      ]
+   },
+     {
+      "restaurantName":"La Grolle",
+      "address":"3 Place du Pré de Foire, 74220 La Clusaz",
+      "lat":45.9045052,
+      "long":6.4198984,
+      "ratings":[
+         {
+            "stars":5,
+            "comment":"Très bon accueil, personnel à l'écoute. Cadre très agréable.Les galettes sont bien fournies et délicieuses.Rapport qualité/prix excellent.Je recommande vivement "
+         },
+         {
+            "stars":5,
+            "comment":"Un super endroit ! On est tombé dessus par hasard, et on a trouvé les plats délicieux et généreux. Et en plus, la patronne est vraiment un amour, très gentille. Si vous voulez goûter du traditionnel, le repas vaut largement le prix !!!"
+         }
+      ]
+   },
+     {
+      "restaurantName":"Restaurant l'Arbé La Clusaz",
+      "address":"411 Route du Col des Aravis, 74220 La Clusaz",
+      "lat":45.9059584,
+      "long":6.4268715,
+      "ratings":[
+         {
+            "stars":5,
+            "comment":"Leurs fondu savoyarde est juste exceptionnel ! Je ne pense pas mes mots, une recette certe bien gardé mais au combien incroyable ! Le service était également excellent ! Je vous le conseille sans aucune hésitation !"
+         },
+         {
+            "stars":4,
+            "comment":"Excellent restaurant de spécialités montagnardes. Cadre très chaleureux, personnel très sympathique, cuisine d'excellente qualité. Prix corrects pour une station et au vu la qualité , mais reste élevé dans l'absolu."
+         }
+      ]
+   }
+]
+
+
+
+
+
+
+
+
